@@ -1,0 +1,38 @@
+.overlay{
+    background-color: black;
+}
+
+
+.navbarr{
+    background-color: transparent;
+    color:white;
+    display: flex;
+
+}
+.logo{
+    padding: 0px 5%;
+}
+.main{
+    position: absolute;
+    right: 100px;
+}
+.main ul{
+    display: flex;
+}
+
+.main li {
+    list-style-type:none;
+    padding: 12px 25px;
+   
+}
+
+.main a{
+    text-decoration:none;
+    color:white;
+}
+@media (max-width:427px) {
+
+   .main{
+    display: none;
+   }
+}

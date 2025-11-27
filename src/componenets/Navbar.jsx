@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import'./Navbar.css'
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
+  const [open, setOpen]= useState(false)
+
   return (
     <>
       <div className='overlay'>
@@ -14,16 +17,16 @@ export default function Navbar() {
             <div className="main">
               <ul>
                 <li>
-                  <a href="">HOME</a>
+                <Link to={"/"} onClick={()=>setOpen(false)}>Home</Link>
                 </li>
                 <li>
-                  <a href="">SHOP</a>
+                  <Link to="/Shop" onClick={()=>setOpen(false)}>Shop</Link>
                 </li>
                 <li>
-                  <a href="">ABOUT</a>
+                  <Link to="/About" onClick={()=>setOpen(false)}>ABOUT</Link>
                 </li>
                 <li>
-                  <a href="">CONTACT US</a>
+                  <Link to="/Contact" onClick={()=>setOpen(false)}>CONTACT US</Link>
                 </li>
               </ul>
 

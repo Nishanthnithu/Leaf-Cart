@@ -1,22 +1,18 @@
 import React, { useState } from 'react'
 import'./Navbar.css'
-<<<<<<< HEAD
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
 
-  const [itopen,setValue]=useState(false)
+const [itopen,setValue]=useState(false)
 
   const changeToggle=()=>{
     setValue(!itopen)
   }
-=======
-import { Link } from 'react-router-dom';
 
-export default function Navbar() {
   const [open, setOpen]= useState(false)
->>>>>>> 40a85c609c8ca4887f9d21b0f16d8a87fcd1e2e5
 
   return (
     <>

@@ -1,6 +1,7 @@
 import Home from './componenets/Home'
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function App() {
  
@@ -11,7 +12,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />}/>
               </Routes>
-              </BrowserRouter>
+      </BrowserRouter>
     </>
   )
 }

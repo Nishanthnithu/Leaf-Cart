@@ -1,7 +1,244 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+ /* {**********TOP POSTER**********} */
 .Container{
     background: url("https://websitedemos.net/generic-ecommerce-02/wp-content/uploads/sites/1526/2025/03/home-hero-bg.jpg");
     height:100vh;
     width: 100%;
     background-position: center;
     background-size: cover;
+    position: relative;
 } 
+.overlayblack{
+    height: 100%;
+    width: 100%;
+    background-color:rgba(16, 32, 40, 0.55);
+    position: absolute;
+    top:0px;
+    left: 0px;
+    z-index: 1;
+}
+.maincenter{
+    position: absolute;
+    top: 25%;
+    left:25%;
+    color: white;
+    text-align: center;
+}
+.maincenter button{
+    height: 40px;
+    width: 120px;
+    border-radius: 15px;
+    border: none;
+    background-color: #8DC63F;
+    color: white;
+}
+.maincenter button:hover{
+    background-color: #5C8F24;
+    color: white;
+    transition:0.5s;
+
+}
+
+.maincenter h1{
+    font-weight:500;
+    font-size: 4em;
+    margin: 0px;
+
+}
+.maincenter p{
+    font-weight:1px;
+    font-size:1em;
+}
+    /* ////////////////{**********TOP POSTER**********}////////////// */
+
+
+
+     /* ////////////////{**********SECOND LINE**********}////////////// */
+
+    .homeSecondLine{
+        margin-top: 100px;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        width: 85%;
+        padding-left: 115px;
+
+    }
+
+.payment{
+    background-color:#f2f8d7;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 40px;
+}
+.image1 h2{
+     margin: 0;
+     font-weight:18px;
+     font-weight: 100;
+}
+.image1 p {
+    margin: 0;
+}
+
+  /* ////////////////{**********SECOND LINE**********}////////////// */
+
+
+    /* ////////////////{**********THIRD LINE**********}////////////// */
+.trendingstore {
+    margin-top:80px;
+}
+.trendingstore h1{
+    font-weight:400;
+    font-size:3em;
+    color: #222;
+}
+    /* ////////////////{**********THIRD LINE**********}////////////// */
+
+        /* ////////////////{**********FOURTH LINE**********}////////////// */
+
+.homeimages{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 80px;
+
+}    
+.productCards{
+    width: 380px;
+    text-align: left;
+
+}
+.productCards img{
+    width: 100%;
+    border-radius: 4px;
+}
+.stars{
+    color: black;
+    font-size:14px;
+}
+.productCards h3{
+    margin: 0px;
+    font-size:18px;
+    font-weight: 500;
+}
+.category{
+    font-size: 14px;
+    color: #666;
+}
+.price{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+    /* ////////////////{**********FOURTH LINE**********}////////////// */
+
+    .FlashSale{
+        background: url("https://websitedemos.net/generic-ecommerce-02/wp-content/uploads/sites/1526/2025/03/middle-cta.jpg");
+        height:400px;
+        width: 100%;
+        margin-top: 80px;
+    }
+    .flashContent{
+        color: white;
+        padding-top:4%;
+        text-align: center;
+        width: 600px;
+    }
+    .flashContent h1{
+        font-weight: 500;
+        font-size:40px;
+        margin:0px;
+    }
+    .flashContent p{
+        margin: 0;
+        text-align: center;
+    }
+    .flashContent button{
+        
+        background-color: transparent;
+        color: white;
+        border:1px solid white;
+        height: 50px;
+        width: 130px;
+        margin-top: 20px;
+        border-radius:30px;
+    }
+    .flashContent button:hover{
+
+        background-color: white;
+        color: black;
+        transition: 0.5s;
+        border: none;
+
+    }
+    .flashoverlay{
+        
+        background-color:rgba(16, 32, 40, 0.55);
+        height:400px;
+        width: 100%;
+    }
+
+    /* ////////////////{**********FIFTH LINE**********}////////////// */
+
+
+     /* ////////////////{**********CATEGORY LINE**********}////////////// */
+
+#ourCategory{
+    margin-top:80px;
+}
+#ourCategory h1{
+        font-weight:400;
+    font-size:3em;
+    color: #222;
+}
+.categoryImages{
+    display: flex;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.categoryImages img{
+    width: 70%;
+    margin: 0;
+    height: 100%;
+}
+.categoryCards{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+.categoryCards h3{
+    font-weight: 400;
+    font-size:2em;
+    margin: 0;
+}
+.premierDestination{
+    background-color:rgb(236, 244, 211);
+    position: relative;
+    height: 400px;
+}
+.premierDestinationContents {
+    position: absolute;
+    top: 100px;
+    right: 180px;
+}
+.premierDestinationContents h1{
+
+    margin:0px;
+    padding: 0px;
+     font-weight:500;
+    font-size: 2.8rem;
+    letter-spacing: 0.5px;
+    line-height: 1.19;
+
+
+}
+.premierDestinationContents p{
+    margin: 0;
+
+}

@@ -11,7 +11,6 @@ import { products, productsTwo } from './Homeprod';
 export default function Home() {
   return (
     <>
-      {/* **********TOP POSTER********** */}
       <div className="Container">
         <Navbar />
         <div className="overlayblack">
@@ -29,9 +28,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* **********TOP POSTER********** */}
 
-      {/* **********SECOND LINE********** */}
 
       <div className="homeSecondLine">
         <div className="image1">
@@ -105,7 +102,7 @@ export default function Home() {
               </h1>
               <br />
               <p>
-                Don’t miss out on our flash sale event! For a limited time,
+                Don't miss out on our flash sale event! For a limited time,
                 enjoy up to 50% <br /> off on a selection of our best-selling
                 products.
               </p>

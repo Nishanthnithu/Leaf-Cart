@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import About from './componenets/About'
 import Contact from './componenets/Contact'
+import Reviews from './componenets/Review'
 
 function App() {
  
@@ -15,6 +16,8 @@ function App() {
               <Route path="/" element={<Home />}/>
                <Route path="/about" element={<About />}/>
                <Route path="/Contact" element={<Contact />}/>
+               <Route path="/Review" element={<Reviews />}/>
+             
               </Routes>
       </BrowserRouter>
     </>

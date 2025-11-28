@@ -1,9 +1,38 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from './Navbar'
 import '../componenets/Contact.css'
 
 export default function Contact() {
-  
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+
+  function handleSubmit(e) {
+    e.preventDefault();
+
+    const userData = {
+      name,
+      email,
+      phone,
+      message
+    };
+
+    const oldData = JSON.parse(localStorage.getItem("contactData")) || [];
+
+    oldData.push(userData);
+
+    localStorage.setItem("contactData", JSON.stringify(oldData));
+
+    alert("Message Saved Successfully!");
+
+    setName("");
+    setEmail("");
+    setPhone("");
+    setMessage("");
+  }
+
   return (
     <>
       <div className='contact-header'>
@@ -49,48 +78,44 @@ export default function Contact() {
                 <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
               </div>
             </div>
-
           </div>
 
-          <form className="contact-form">
+          <form className="contact-form" onSubmit={handleSubmit}>
             <label>Name *</label>
-            <input type="text" placeholder="" />
+            <input 
+              type="text" 
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
+            />
 
             <label>Email *</label>
-            <input type="email" placeholder="" />
+            <input 
+              type="email" 
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
 
             <label>Phone *</label>
-            <input type="text" placeholder="" />
+            <input 
+              type="number" 
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              required
+            />
 
             <label>Message</label>
-            <textarea rows="5"></textarea>
+            <textarea 
+              rows="5"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            ></textarea>
 
             <button type="submit" className="submit-btn">Submit</button>
           </form>
-
         </div>
       </section>
-      <div className="App">
-      <header className="header-social">
-        <div className="social-icons">
-          
-        </div>
-      </header>
-
-      <section className="hero">
-        <div className="hero-content">
-          <h1>Ready to Find your Perfect Plant?</h1>
-          <p>
-            Browse our online store or visit us in person to
-            <br />
-            experience the beauty of nature.
-          </p>
-          <button className="shop-btn">Shop Now</button>
-        </div>
-       
-      </section>
-          </div>
-    
     </>
   )
 }

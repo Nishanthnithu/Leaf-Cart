@@ -127,12 +127,12 @@ export default function About() {
             <span>URBAN JUNGLE CO.</span>
           </div>
 
-          <div className="footer-menu">
+          {/* <div className="footer-menu">
             <a href="#">Home</a>
             <a href="#">Shop</a>
             <a href="#">About</a>
             <a href="#">Contact</a>
-          </div>
+          </div> */}
 
           <div className="social-icons">
             <i className="fa-brands fa-facebook"></i>

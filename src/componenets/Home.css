@@ -1,4 +1,4 @@
-* {
+    * {
   font-family: "Poppins", sans-serif;
 }
 
@@ -81,6 +81,9 @@
 }
 .image1 p {
     margin: 0;
+}
+.image1 hr{
+    margin-left:0px;
 }
 
   /* ////////////////{**********SECOND LINE**********}////////////// */
@@ -217,15 +220,21 @@
     font-size:2em;
     margin: 0;
 }
+.premierDestination img{
+    position: absolute;
+    left:150px;
+    top:100px;
+}
 .premierDestination{
     background-color:rgb(236, 244, 211);
     position: relative;
-    height: 400px;
+    height: 800px;
+    margin-top: 150px;
 }
 .premierDestinationContents {
     position: absolute;
-    top: 100px;
-    right: 180px;
+    top: 180px;
+    right: 90px;
 }
 .premierDestinationContents h1{
 
@@ -234,11 +243,274 @@
      font-weight:500;
     font-size: 2.8rem;
     letter-spacing: 0.5px;
-    line-height: 1.19;
-
-
+    line-height: 1.19; 
 }
 .premierDestinationContents p{
     margin: 0;
+    color: #666;
+}
+.customer{
+    display: flex;
+    right: 150px;
+    margin-top:50px;
 
+}
+.customer h3{
+font-size:2em;
+font-weight:400;
+margin: 0;
+}
+
+.customertwo{
+    margin-left:100px;
+}
+.popularproduct{
+    margin-top:80px;
+}
+.popularproduct h1{
+        font-weight: 400;
+        font-size:3em;
+}
+.popularPlants{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 80px;
+}
+.popularthree{
+    width: 380px;
+    text-align: left;
+}
+.popularthree img{
+    width: 100%;
+    border-radius: 4px;
+}
+.starss{
+    color: black;
+    font-size:14px;
+}
+.popularthree h3{
+    margin: 0px;
+    font-size:18px;
+    font-weight: 500;
+    margin: 0;
+}
+.popularCategory{
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+.popularthree span{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+.theLastDiv{
+    background-color: rgb(236, 244, 211);
+    padding: 50px 100px;
+    margin-top: 80px;
+    position: relative;
+    height:700px;
+
+}
+.theLastDiv h1{
+    font-weight:500;
+    font-size:2.5em;
+    margin:0;
+}
+.theLastDiv p{
+    margin: 0;
+    font-size:17px;
+    color: grey;
+}
+
+/* REVIEW ONE */
+.firstreview{
+    background-color: white;
+    color: black;
+    width:40%;
+    height:260px;
+    border-radius:10px;
+    padding: 30px 30px;
+    margin-top: 60px;
+    position:absolute;
+    left: 80px;
+}
+.firstreview span{
+    color: #8DC63F;
+    font-size:4em;
+    margin:0;
+}
+.firstreview p{
+    margin: 0;
+    padding-top: 20px;
+    font-size:20px;
+    color: black;
+}
+.colon{
+    color: #5C8F24;
+    font-size: 2em;
+}
+.profile{
+    font-size: 40px;
+    margin-top:30px;
+    color:rgb(42, 225, 164);
+    display: flex;
+}
+.client p{
+    font-size:20px;
+    position: absolute;
+    left:80px;
+    bottom:45px;
+    font-size:large;
+    color: grey;
+}
+/* REVIEW ONE */
+
+
+/* REVIEW TWO */
+
+.firstreview2{
+    background-color: white;
+    color: black;
+    width:40%;
+    height:260px;
+    border-radius:10px;
+    padding: 30px 30px;
+    margin-top: 60px;
+    position:absolute;
+    right:80PX;
+    top: 10px;
+}
+.firstreview2 span{
+    color: #8DC63F;
+    font-size:4em;
+    margin:0;
+}
+.firstreview2 p{
+    margin: 0;
+    padding-top: 20px;
+    font-size:20px;
+    color: black;
+}
+.colon{
+    color: #5C8F24;
+    font-size: 2em;
+}
+.profile{
+    font-size: 40px;
+    margin-top: 20px;
+    color:rgb(42, 225, 164);
+    display: flex;
+}
+.client2 p {
+    position: absolute;
+    color: grey;
+    top: 225px;
+}
+
+/* REVIEW TWO */
+
+/* REVIEW THREE */
+
+.firstreview3{
+    background-color: white;
+    color: black;
+    width:40%;
+    height:260px;
+    border-radius:10px;
+    padding: 30px 30px;
+    margin-top: 60px;
+    position:absolute;
+    right:80PX;
+    top: 350px;
+}
+.firstreview3 span{
+    color: #8DC63F;
+    font-size:4em;
+    margin:0;
+}
+.firstreview3 p{
+    margin: 0;
+    padding-top: 20px;
+    font-size:20px;
+    color: black;
+}
+.colon{
+    color: #5C8F24;
+    font-size: 2em;
+}
+.profile{
+    font-size: 40px;
+    margin-top: 20px;
+    color:rgb(42, 225, 164);
+    display: flex;
+}
+.client3 p {
+    position: absolute;
+    color: grey;
+    top: 225px;
+}
+
+/* REVIEW THREE */
+
+.readytofind{
+    background: url("https://websitedemos.net/generic-ecommerce-02/wp-content/uploads/sites/1526/2025/03/footer-bg.jpg");
+    height:350px;
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+    position: relative;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.readToFindOverlay{
+    background-color: rgba(4, 8, 9, 0.55);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.readToFindOverlay h1{
+    color: white;
+    font-weight: 400;
+    font-size:3em;
+    margin:0;
+    padding-top:50px;
+}
+.readToFindOverlay p{
+    color: white;
+    font-size:1.5em;
+}
+.readToFindOverlay button{
+    height: 40px;
+    width: 120px;
+    border-radius:25px;
+    border: none;
+    background-color: #8DC63F;
+    color: white;
+}
+.readToFindOverlay button:hover{
+    background-color:#5C8F24;
+    transition: 0.3s;
+}
+.final{
+    background-color:rgb(236, 244, 211);
+    height:100px;
+    margin: 0;
+    margin-top: 0px;
+}
+footer p{
+    padding-top:30px;
+    font-size:1.5em;
 }

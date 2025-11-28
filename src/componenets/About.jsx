@@ -142,7 +142,7 @@ export default function About() {
           </div>
         </div>
 
-        <hr />
+        <hr/>
 
         <p className="copyright">
           Copyright © 2025 Generic eCommerce

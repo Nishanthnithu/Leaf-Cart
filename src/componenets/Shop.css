@@ -1,0 +1,110 @@
+.navbarShop{
+    background-color: black;
+    color: black;
+}
+.shopBanner{
+    background: url("https://websitedemos.net/generic-ecommerce-02/wp-content/uploads/sites/1526/2025/03/shop-bg.jpg");
+    height: 350px;
+    width: 100%;
+}
+.bannerOverlay{
+    background-color: rgba(16, 32, 40, 0.55);
+    height: 100%;
+    width: 100%;
+}
+.bannerOverlay h1{
+    font-size:80px;
+    color: white;
+    margin: 0;
+    padding-top: 100px;
+}
+
+.productGrid{
+    height: 500px;
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 per row */
+  gap: 40px;
+  padding: 20px 40px;
+}
+.Filterline{
+    display: flex;
+    margin-top: 50px;
+}
+.Filterline p{
+    position: absolute;
+    left: 60px;
+}
+.Filterline input{
+    position: absolute;
+    right: 600px;
+    top: 470px;
+    height: 40px;
+    width: 290px;
+    margin-top: 40px;
+    border:1px solid grey;
+    border-radius:20px;
+}
+.Filterline input:hover{
+    transition: 0.3s;
+    border: 1px solid black;
+    
+
+}
+
+/* Product Card */
+.productCard {
+  text-decoration: none;
+  color: #000;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+/* Image */
+.productsImage {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Title */
+.productCard h3 {
+  margin: 10px 0 5px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Category text */
+.productCard p {
+  margin: 3px 0 8px;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Price */
+.productPrice {
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+  margin-top: 10px;
+}
+.shopEnd{
+    margin-top:600px;
+}
+
+@media (max-width: 900px) {
+  .productGrid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row */
+  }
+}
+
+@media (max-width: 500px) {
+  .productGrid {
+    grid-template-columns: 1fr; /* 1 per row */
+  }
+}

@@ -38,7 +38,7 @@ export default function Shop() {
         <div className="productGrid">
           {filterProducts.map((products) => (
             <Link
-              to={`/products/${products.id}`}
+              to={`/ShowProduct/${products.id}`}
               key={products.id}
               className="productCard"
             >
@@ -64,6 +64,14 @@ export default function Shop() {
             </center>
           </div>
         </div>
+      </div>
+
+      <div className="final">
+        <footer>
+          <center>
+            <p>Copyright © 2025 Generic eCommerce</p>
+          </center>
+        </footer>
       </div>
     </>
   );

@@ -9,6 +9,7 @@ import{faHeart} from "@fortawesome/free-solid-svg-icons"
 import { products, productsTwo, popularproduct } from "./Homeprod"
 import{faQuoteLeft} from "@fortawesome/free-solid-svg-icons"
 import {faCircleUser} from "@fortawesome/free-solid-svg-icons"
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   return (
@@ -22,15 +23,13 @@ export default function Home() {
               <h1>
                 Discover the Beauty of <br /> Nature at Your Fingertips
               </h1>
-              <a href="">
+              <Link to={"/Shop"}>
                 <button>Shop Now</button>
-              </a>
+              </Link>
             </div>
           </center>
         </div>
       </div>
-
-
 
       <div className="homeSecondLine">
         <div className="image1">
@@ -115,7 +114,9 @@ export default function Home() {
                 enjoy up to 50% <br /> off on a selection of our best-selling
                 products.
               </p>
-              <button>Shop Now</button>
+              <Link to={"/"}>
+                <button>Shop Now</button>
+              </Link>
             </div>
           </center>
         </div>

@@ -31,17 +31,17 @@ const [itopen,setValue]=useState(false)
               {itopen && (
                 <ul>
                   <li>
-                    <a href="">HOME</a>
+                    <Link to={"/"}>Home</Link>
                   </li>
                   <li>
-                    <a href="">SHOP</a>
+                    <Link to={"/Shop"}>Shop</Link>
                   </li>
                   <li>
-                    <a href="">ABOUT</a>
+                    <Link to={"/About"}>About</Link>
                   </li>
                   <li>
-                    <a href="">CONTACT US</a>
-                  </li>
+                    <Link to={"Contact"}>Contact us</Link>
+                    </li>
                 </ul>
               )}
             </div>
@@ -49,10 +49,10 @@ const [itopen,setValue]=useState(false)
             <div className="main">
               <ul>
                 <li>
-                <Link to={"/"} onClick={()=>setOpen(false)}>Home</Link>
+                <Link to={"/"} onClick={()=>setOpen(false)}>HOME</Link>
                 </li>
                 <li>
-                  <Link to="/Shop" onClick={()=>setOpen(false)}>Shop</Link>
+                  <Link to="/Shop" onClick={()=>setOpen(false)}>SHOP</Link>
                 </li>
                 <li>
                   <Link to="/About" onClick={()=>setOpen(false)}>ABOUT</Link>

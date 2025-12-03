@@ -22,12 +22,10 @@ function App() {
                <Route path="/Contact" element={<Contact />}/>
                <Route path='/ShowProduct/:id' element={<ShowProduct/>}/>
                <Route path='/Cart'element={<CartProducts/>}/>
-
-            
               </Routes>
       </BrowserRouter>
     </>
   )
 }
 
-export default App
+export default App()
